@@ -9,6 +9,9 @@ msg.text = document.querySelector('[name="text"]').value;
 
 function populateVoices() {
   console.log(this);
+  voices = this.getVoices();
+  console.log(voices);
+
 }
 
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
